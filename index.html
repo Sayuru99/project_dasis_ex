@@ -24,11 +24,17 @@
       body {
         margin: 0;
         overflow: hidden;
-        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
-      .container {
+
+      .container-fluid {
         padding: 20px;
       }
+
       .ar-text {
         font-family: "Roboto", sans-serif;
         background-color: rgba(0, 0, 0, 0.7);
@@ -38,14 +44,32 @@
         width: auto;
         text-align: center;
       }
+
       #arjsDebugUIContainer,
       .a-enter-vr-button {
         display: none !important;
       }
+
+      h1 {
+        font-size: 2rem;
+        color: #fffff5;
+      }
+      p {
+        font-size: 1.2rem;
+        color: #fffff5;
+      }
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+      }
     </style>
   </head>
-  <body style="margin: 0; overflow: hidden">
-    <div class="container text-center">
+  <body>
+    <div class="container-fluid center-container">
       <h1 class="my-4">Scan Your Hero</h1>
       <p class="lead">
         Point your camera at the 'hiro' marker to reveal the hero's image and
